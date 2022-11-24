@@ -1,0 +1,19 @@
+.main{
+    background: rgb(246,11,198);
+    background: linear-gradient(90deg, rgba(246,11,198,1) 4%, rgba(154,17,201,1) 22%, rgba(0,212,255,1) 40%, rgba(154,17,201,1) 62%, rgba(246,11,198,1) 81%, rgba(0,212,255,1) 98%);
+    border: 0.5px solid black;
+    border-radius: 0.25rem;
+}
+
+.btn{
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 0.25rem;
+    
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}

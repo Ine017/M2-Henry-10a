@@ -18,6 +18,18 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
 
 var selectorTypeMatcher = function(selector) {
   // tu código aquí
+  if(selector.startsWith('#')) {
+    return 'id'
+  }
+  else if (selector.startsWith('.')) {
+    return 'class'
+  }
+  else if (selector.includes('.')) {
+    return 'tag.class'
+  }
+  else if (selector = 'string') {
+    return 'tag'
+  }
   
 };
 
@@ -28,9 +40,9 @@ var selectorTypeMatcher = function(selector) {
 
 var matchFunctionMaker = function(selector) {
   var selectorType = selectorTypeMatcher(selector);
-  var matchFunction;
+  var matchFunction = function(el){
   if (selectorType === "id") { 
-   
+   return selector.test(selectorType)
   } else if (selectorType === "class") {
     
   } else if (selectorType === "tag.class") {
@@ -39,6 +51,7 @@ var matchFunctionMaker = function(selector) {
     
   }
   return matchFunction;
+}
 };
 
 var $ = function(selector) {
