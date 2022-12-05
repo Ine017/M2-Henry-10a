@@ -9,6 +9,7 @@
     color: whitesmoke;
     background-color: black;
     border-radius: 0.25rem;
+    font-size: 15px;
     
 }
 
@@ -16,4 +17,17 @@
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
+}
+
+.input{
+    border-radius: 0.25em;
+    margin-left: 0.5em;
+    padding: 0.5em;
+    border: solid black 0.5px;
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+}
+.input:hover {
+  background-color: rgb(87, 86, 86);
 }
